@@ -44,7 +44,7 @@
 * beyond that I cannot know without calculating the product.
 *
 * I got very close, but needed to change from integer to unsigned long so that
-* the overflow from integer was avoided. 
+* the overflow from integer was avoided.
 */
 
 #include <stdio.h>
