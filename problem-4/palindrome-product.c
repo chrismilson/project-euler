@@ -4,6 +4,8 @@
 * from the product of two 2-digit numbers is 9009 = 91 × 99.
 *
 * Find the largest palindrome made from the product of two 3-digit numbers.
+*
+* Answer: 906609.
 */
 
 /* Note that I have assumed this problem to be base-10-centric.
@@ -14,7 +16,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define DIGITS 4
+#define DIGITS 3
 #define BASE 10
 
 char* intToString(int, int);
