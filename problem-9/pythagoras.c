@@ -8,7 +8,7 @@
 * Find the product abc.
 *
 * Answer a = 375, b = 200, c = 425.
-* abc = .
+* abc = 31,875,000.
 */
 
 /*
