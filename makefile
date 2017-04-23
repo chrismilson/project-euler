@@ -17,7 +17,7 @@ override MAKE_NEW = 1
 
 %: problem-% problem-%/makefile
 	# Making problem $@.
-	@ $(MAKE) -C $<
+	@ $(MAKE) -s -C $<
 	# Done.
 
 %: problem-%
