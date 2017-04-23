@@ -55,8 +55,9 @@
 unsigned long product(unsigned long*);
 
 int main(int argc, char **argv) {
+  printf("\n");
   unsigned long nextAdded;
-  FILE *numFile = fopen("./problem-8/number.txt", "rb");
+  FILE *numFile = fopen("./number.txt", "rb");
   if(!numFile) {
     perror("File opening failed");
     return EXIT_FAILURE;
@@ -85,7 +86,7 @@ int main(int argc, char **argv) {
   for (i = 0; i < NUMBER_CONSECUTIVE; i++) {
     printf("%lu ", currentLargest[i]);
   }
-  printf("and their product is %lu.", product(currentLargest));
+  printf("and their product is %lu.\n", product(currentLargest));
 
   printf("\n");
   fclose(numFile);

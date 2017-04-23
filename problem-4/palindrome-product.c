@@ -19,7 +19,9 @@
 #define DIGITS 3
 #define BASE 10
 
-char* intToString(int, int);
+int isPalindrome(int number, int base);
+int digitInPlace(int number, int place, int base);
+int powi(int a, int b);
 
 int main(int argc, char **argv) {
   int num1, num2;
@@ -56,6 +58,7 @@ int main(int argc, char **argv) {
   printf("\nThe largest palindrome that is made from the product of two ");
   printf("%d-digit numbers in base %d is %d.\n",DIGITS, BASE, maxNum1 * maxNum2);
   printf("The numbers were %d and %d.\n\n", maxNum1, maxNum2);
+  return 0;
 }
 
 int isPalindrome(int number, int base) {

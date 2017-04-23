@@ -24,6 +24,7 @@
 #define MAX 4000000
 
 int main(int argc, char **argv) {
+  printf("\n");
   if (sizeof(int) < 3) {
     printf("The integer type cannot hold numbers big enough for this.");
     return 0;
@@ -44,5 +45,6 @@ int main(int argc, char **argv) {
   }
   printf("The sum of the fibonacci numbers less than %d ",  MAX);
   printf("that are even is %d.\n", sum);
+  printf("\n");
   return 0;
 }

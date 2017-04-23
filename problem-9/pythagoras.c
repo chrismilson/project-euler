@@ -42,7 +42,7 @@ int main(int argc, const char **argv) {
   int i;
   for (i = 0; i < TARGET; i++) {
     pair(i++, &a, &b);
-    checkEuclideanTriple(a, b, TARGET);
+    if (!checkEuclideanTriple(a, b, TARGET)) return 0;
   }
 
   return 0;
@@ -62,9 +62,9 @@ int checkEuclideanTriple(const int m, const int n, const int target) {
       printf("\nThe triple %d, %d, %d is pythagorean ", k*a, k*b, k*c);
       printf("since %d^2 + %d^2 = %d + %d ", k*a, k*b, k*k*a*a, k*k*b*b);
       printf("= %d = %d^2\n", k*k*a*a + k*k*b*b, k*c);
-      printf("Also, %d + %d + %d = %d!\n", k*a, k*b, k*c, target);
+      printf("Also, %d + %d + %d = %d.\n", k*a, k*b, k*c, target);
       printf("And %d * %d * %d = %d\n\n", k*a, k*b, k*c, k*k*k*a*b*c);
-      printf("The pair was %d, %d and k was %d\n\n", m, n, k);
+      // printf("The pair was %d, %d and k was %d\n\n", m, n, k);
       return 0;
     }
     k++;

@@ -20,7 +20,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+int sumMultiples(int max, int *num1, int len);
+
 int main(int argc, char **argv) {
+  printf("\n");
   if (argc < 3) {
     printf("\nPlease enter numbers in the following format:\n");
     printf("First enter the upper limit of the numbers you are checking.\n");
@@ -47,6 +50,7 @@ int main(int argc, char **argv) {
     }
   }
   printf("is %d.\n", sumMultiples(max, numbers, argc - 2));
+  printf("\n");
   return 0;
 }
 

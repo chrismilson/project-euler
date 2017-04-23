@@ -25,6 +25,7 @@
 unsigned long largestPrimeFactor(unsigned long);
 
 int main(int argc, char **argv) {
+  printf("\n");
   if (argc != 2) {
     printf("\nPlease run the program by doing\n\n\t./largest-pfactor N\n\n");
     printf("Where N is the number you want to know the largest prime factor ");
@@ -35,6 +36,8 @@ int main(int argc, char **argv) {
   unsigned long number = atol(argv[1]);
   printf("The largest prime factor of %lu ", number);
   printf("is %lu\n", largestPrimeFactor(number));
+  printf("\n");
+  return 0;
 }
 
 unsigned long largestPrimeFactor(unsigned long number) {
