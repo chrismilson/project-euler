@@ -9,12 +9,6 @@ empty:
 	#
 	#	make 5
 
-new:
-override MAKE_NEW = 1
-# Note that if the problem already exists then the first rule will be run and
-# no remake of the problem will occur
-	@:
-
 %: problem-% problem-%/makefile
 	# Making problem $@.
 	@ $(MAKE) -s -C $<
@@ -24,10 +18,5 @@ override MAKE_NEW = 1
 	# Problem not equipped with a makefile; try manual installation.
 
 %:
-ifdef MAKE_NEW
-	mkdir problem-$@/
-	touch problem-$@/makefile
-else
 	# I have not done problem $@ yet.
 	# It may not exist!
-endif
