@@ -3,9 +3,9 @@ A place to keep my answers to the project euler problems
 
 If you want to run the program associated with a specific problem just do
 
-'''bash
-make 6
-'''
+```bash
+  make 6
+```
 
 (or another number if you didnt want to run problem 6)
 
