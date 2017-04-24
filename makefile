@@ -1,5 +1,6 @@
 # This is to serve as a general makefile for the end user to try out my
 # solutions themselves.
+PROBLEM = problems/problem-
 
 .PHONY: empty new %
 empty:
@@ -9,12 +10,12 @@ empty:
 	#
 	#	make 5
 
-%: problem-% problem-%/makefile
+%: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
 	@ $(MAKE) -s -C $<
 	# Done.
 
-%: problem-%
+%: $(PROBLEM)%
 	# Problem not equipped with a makefile; try manual installation.
 
 %:
