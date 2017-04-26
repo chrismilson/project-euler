@@ -21,5 +21,36 @@
 * What is the value of the first triangle number to have over five hundred
 * divisors?
 *
-* Answer : 
+* Answer :
 */
+
+/* Chris' Approach
+** I thought of two ways of approaching this.
+* 1. Try to create a large triangle number with a lot of factors.
+* or.
+* 2. Find an algorithm that gets the number of factors of a number and use it
+* on consecutive triangle numbers until there is one with over 500 factors.
+*
+* The second approach sounds more straightforward.
+*
+* We can work out a numbers factors with its prime factorisiation.
+* I would work out the prime factorisation of a number by dividing it evenly
+* by two until that wont work any more, then onto 3 etc. keeping track until I
+* end up with 1.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int triangle(int n); // Returns the nth triangle number.
+
+
+
+int triangle(int n) {
+  return n * (n + 1) / 2;
+}
+
+int main(int argc, char **argv) {
+
+  return 0;
+}
