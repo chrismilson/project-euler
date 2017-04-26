@@ -21,5 +21,15 @@
 * What is the value of the first triangle number to have over five hundred
 * divisors?
 *
-* Answer : 
+* Answer :
+*/
+
+/* Chris' Approach
+** Immediately I can think of two ways of approaching this.
+* 1. Try to create a large triangle number with a lot of factors.
+* or.
+* 2. Find an algorithm that gets the number of factors of a number and use it
+* on consecutive triangle numbers until there is one with over 500 factors.
+*
+* The second approach sounds more straightforward.
 */
