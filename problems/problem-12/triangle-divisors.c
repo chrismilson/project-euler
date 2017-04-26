@@ -44,13 +44,57 @@
 
 int triangle(int n); // Returns the nth triangle number.
 
+int factorise(unsigned long n); // Returns the number of factors of n.
 
+int factorise(unsigned long n) {
+  int *pfactors;
+  int currentSize = 8;
+  pfactors = (int *) malloc(sizeof(int) * currentSize);
+
+  int currFac = 1; // the current potential factor check.
+  int i = 0, j; // index in pfactors.
+  int currFreq;
+
+  int finalCount;
+
+  while (n != 1) {
+    currFac++;
+    currFreq = 0;
+    while (n % currFac == 0) {
+      currFreq++;
+      n /= currFac;
+    }
+    if (i == currentSize) {
+      int *nextfactors = (int *) malloc(sizeof(int) * currentSize * 2);
+      for (i = 0; i < currentSize; i++) {
+        nextfactors[i] = pfactors[i];
+      }
+      free(pfactors);
+      currentSize *= 2;
+      pfactors = nextfactors;
+    }
+    if (currFreq == 0) continue;
+    pfactors[i++] = currFreq;
+  }
+
+  finalCount = 1;
+  for (j = 0; j < i; j++) {
+    finalCount *= pfactors[j] + 1;
+  }
+  return finalCount;
+}
 
 int triangle(int n) {
   return n * (n + 1) / 2;
 }
 
 int main(int argc, char **argv) {
+  unsigned long n = 1;
+
+  while (factorise(triangle(n)) < 500) n++;
+
+  printf("The first triangle number to have at least 500 factors is ");
+  printf("%d.\n", triangle(n));
 
   return 0;
 }
