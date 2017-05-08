@@ -12,7 +12,7 @@ empty:
 
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
-	@ $(MAKE) -s -C $<
+	@ $(MAKE) -s -C $< $(FLAGS)
 	# Done.
 
 %: $(PROBLEM)%
