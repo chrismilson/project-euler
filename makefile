@@ -2,7 +2,7 @@
 # solutions themselves.
 PROBLEM = problems/problem-
 
-.PHONY: empty tools devtools new %
+.PHONY: empty new %
 empty:
 	# Please specify a problem to run.
 	#
