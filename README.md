@@ -13,3 +13,10 @@ A lot of the problems have descriptions of the problem and my thinking behind
 my solution in large block comments at the beginning of the source files.
 
 https://projecteuler.net/
+
+## tools
+
+You can get tools for streamlining the creation of new problems by doing
+```
+git add submodule https://github.com/chrismilson/project-euler-tools.git devtools
+```
