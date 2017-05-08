@@ -2,20 +2,13 @@
 # solutions themselves.
 PROBLEM = problems/problem-
 
-.PHONY: empty new %
+.PHONY: empty tools devtools new %
 empty:
 	# Please specify a problem to run.
 	#
 	# For example, problem 5 can be done by doing
 	#
 	#	make 5
-
-tools: devtools
-	@ $(MAKE) -s -C $<
-	# You can now use ./new -n number -N name to initialise a new problem!
-
-devtools:
-	@ git add submodule https://github.com/chrismilson/project-euler-tools.git $@
 
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
