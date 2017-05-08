@@ -18,5 +18,5 @@ https://projecteuler.net/
 
 You can get tools for streamlining the creation of new problems by doing
 ```
-git add submodule https://github.com/chrismilson/project-euler-tools.git devtools
+git submodule update --init devtools
 ```
