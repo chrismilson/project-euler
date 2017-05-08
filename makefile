@@ -2,13 +2,16 @@
 # solutions themselves.
 PROBLEM = problems/problem-
 
-.PHONY: empty new %
+.PHONY: empty tools new %
 empty:
 	# Please specify a problem to run.
 	#
 	# For example, problem 5 can be done by doing
 	#
 	#	make 5
+
+tools:
+	@ $(MAKE) -s -C devtools
 
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
