@@ -10,6 +10,13 @@ empty:
 	#
 	#	make 5
 
+tools: devtools
+	@ $(MAKE) -s -C $<
+	# You can now use ./new -n number -N name to initialise a new problem!
+
+devtools:
+	@ git add submodule https://github.com/chrismilson/project-euler-tools.git $@
+
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
 	@ $(MAKE) -s -C $< $(FLAGS)
@@ -21,3 +28,6 @@ empty:
 %:
 	# I have not done problem $@ yet.
 	# It may not exist!
+
+clean:
+	@ $(MAKE) -s -C devtools clean
