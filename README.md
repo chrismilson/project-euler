@@ -1,5 +1,5 @@
 # project-euler
-A place to keep my answers to the project euler problems
+A place to keep my answers to the [project euler](https://projecteuler.net/) problems
 
 If you want to run the program associated with a specific problem just do
 
@@ -12,7 +12,7 @@ If you want to run the program associated with a specific problem just do
 A lot of the problems have descriptions of the problem and my thinking behind
 my solution in large block comments at the beginning of the source files.
 
-https://projecteuler.net/
+
 
 ## tools
 
