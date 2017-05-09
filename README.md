@@ -19,4 +19,5 @@ https://projecteuler.net/
 You can get tools for streamlining the creation of new problems by doing
 ```
 git submodule update --init devtools
+make tools
 ```
