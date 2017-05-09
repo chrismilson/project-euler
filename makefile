@@ -11,7 +11,7 @@ empty:
 	#	make 5
 
 tools:
-	@ $(MAKE) -s -C devtools
+	python devtools/install-tools.py
 
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
