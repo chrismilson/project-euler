@@ -1,6 +1,6 @@
-FILES = power-digit-sum.c
 CC = gcc
 CFLAGS =
+FILES = power-digit-sum.c
 OBJECTS = $(FILES:%.c=%.o)
 
 .PHONY : all

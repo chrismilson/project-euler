@@ -11,7 +11,11 @@ empty:
 	#	make 5
 
 tools:
+<<<<<<< HEAD
 	@ python devtools/install-tools.py
+=======
+	python devtools/install-tools.py
+>>>>>>> bb284bede79922025796765a920263d0acebfc78
 
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
