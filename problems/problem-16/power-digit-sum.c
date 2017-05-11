@@ -25,7 +25,7 @@
 
 #define BASE_A 2
 #define BASE_B 10
-#define POWER 10000
+#define POWER 1000
 
 int main(int argc, char **argv) {
 	const int SIZE = (int) (POWER * (log(BASE_A)/log(BASE_B)) + 1);
