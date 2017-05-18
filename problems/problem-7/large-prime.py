@@ -25,4 +25,4 @@ while len(primes) < MAXPRIME:
         primes.append(i)
     i = i + 1
 
-print str(primes[MAXPRIME - 1])
+print "The " + str(MAXPRIME) + "th prime is " + str(primes[MAXPRIME - 1])
