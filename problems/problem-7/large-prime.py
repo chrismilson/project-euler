@@ -6,7 +6,7 @@ the 6th prime is 13.
 
 What is the 10 001st prime number?
 
-Answer :
+Answer : 104743
 """
 
 MAXPRIME = 10001
