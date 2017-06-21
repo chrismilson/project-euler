@@ -11,7 +11,7 @@ empty:
 	#	make 5
 
 tools:
-	python devtools/install-tools.py
+	@ python devtools/install-tools.py
 
 %: $(PROBLEM)% $(PROBLEM)%/makefile
 	# Making problem $@.
@@ -26,4 +26,4 @@ tools:
 	# It may not exist!
 
 clean:
-	@ $(MAKE) -s -C devtools clean
+	@ rm -f new problems/*.o *app
