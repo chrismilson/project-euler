@@ -21,3 +21,4 @@ You can get tools for streamlining the creation of new problems by doing
 git submodule update --init devtools
 make tools
 ```
+(If this is a really dodgy way of doing submodules please let me know)
