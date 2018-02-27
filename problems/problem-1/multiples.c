@@ -41,15 +41,13 @@ int main(int argc, char **argv) {
   int i, num;
   int *numbers;
   numbers = (int *) malloc(sizeof(int) * (argc - 2));
-  for (i = 2; i < argc; i++) {
+  for (i = 2; i < argc - 1; i++) {
     num = atoi(argv[i]);
-    printf("%d ", num);
+    printf("%d or ", num);
     *(numbers + i - 2) = num;
-    if (!(i == argc - 1)) {
-      printf("or ");
-    }
   }
-  printf("is %d.\n", sumMultiples(max, numbers, argc - 2));
+  *(numbers + argc - 3) = atoi(argv[argc - 1]);
+  printf("%d is %d.\n", atoi(argv[argc - 1]), sumMultiples(max, numbers, argc - 2));
   printf("\n");
   return 0;
 }
