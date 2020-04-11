@@ -26,9 +26,8 @@ Answer : 1074
 """
 from triangle import triangle
 
-# at each loop it should hold the maximum sum from the row above to the top.
-#
 def maxPathSum(triangle):
+  # At each loop it should hold the maximum sum from the row above to the top.
   dp = [0, 0]
 
   for row in triangle:
