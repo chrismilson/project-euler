@@ -18,7 +18,7 @@ U(n), there is no possibility that F(n) = n for any n >= N.
 We can find this bound quickly, and then exhaustively search the remaining
 numbers to find all of these numbers.
 
-Answer : 
+Answer : 40730
 """
 from functools import lru_cache
 import math
