@@ -28,8 +28,7 @@ def pentagonal(n):
   return n * (3 * n - 1) // 2
 
 def isPentagonal(n):
-  target = (math.sqrt(1 + 24 * n) + 1) / 6
-  return target == math.floor(target)
+  return math.sqrt(1 + 24 * n) % 6 == 5
 
 j = 1
 found = False
